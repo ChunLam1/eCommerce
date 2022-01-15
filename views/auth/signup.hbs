@@ -1,13 +1,12 @@
 <form action="/auth/signup" method="POST">
-   <label> Username
-      <input type="text" name="username">
-   </label>
-      <label > email
-      <input type="email" name="email">
-   </label>
-   <label> Password
-      <input type="password" name="password">
-   </label>
+   <label for="email">Email</label>
+   <input type="email" name="email" id="email">
+   
+   <label for="password">Password</label>
+   <input type="password" name="password" id="password">
+  
+   <label for="address">Address</label>
+   <input type="text" name="address" id="address">
 
    <button type="submit">Submit</button>
 </form>
