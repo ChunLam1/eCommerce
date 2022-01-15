@@ -1,6 +1,24 @@
 <nav>
-    <a href="/" ><i class="fas fa-home"></i>Home  |</a>
-    <a href="/new">What's new  |</a>
-    <a href="/women">Women  |</a>
-    <a href="/men">Men</a>
+    <div class="navLeft">
+        <a href="/" ><i class="fas fa-home"></i>Home  |</a>
+        <a href="/new">What's new  |</a>
+        <a href="/women">Women  |</a>
+        <a href="/men">Men</a>
+    </div>
+
+    {{!-- {{#if isLoggedIn}}
+    Dashboard logged users
+   {{/if}} --}}
+
+    <div class="navEnd">
+         {{#unless isLoggedIn}}
+        <a href="/auth/signup">Signup bro'</a>
+        <a href="/auth/login">Log in</a>
+          {{/unless}}
+          {{#if isLoggedIn}}
+        <a href="/auth/logout">Log out</a>
+        {{/if}}
+
+        <i class="fas fa-shopping-cart panier"></i>
+    </div>
 </nav>

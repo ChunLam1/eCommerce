@@ -19,5 +19,18 @@ a:hover {
 h1 {
   color: brown;
 }
-.background {
+
+.panier {
+  color: cornflowerblue;
+  height: 10px;
+  cursor: pointer;;
+}
+.panier:hover{
+  color: crimson;
+}
+p{
+  color: chocolate;
+}
+label{
+  color: coral;
 }
