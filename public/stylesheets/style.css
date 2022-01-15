@@ -1,12 +1,23 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("http://isarta.com/infos/wp-content/uploads/2015/01/Fotolia_70869411_S.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
 }
 
 a {
-  color: #00b7ff;
+  color: #9eb666;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(109, 27, 27);
 }
 
 h1 {
-  color: 15px;
+  color: brown;
+}
+.background {
 }
