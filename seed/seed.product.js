@@ -1,8 +1,8 @@
 require("dotenv").config();
-require("../../config/mongodb");
+require("../db/index");
 const ProductModel = require("../models/Product.model");
 
-const product = [
+const products = [
     {
     name: "BLABLA",
     description:"FAFAFAFA",

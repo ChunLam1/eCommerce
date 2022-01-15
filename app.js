@@ -17,9 +17,7 @@ const app = express();
 
 // ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
 require("./config")(app);
-app.use(express.static(__dirname + "/public"));
 
-hbs.registerPartials(__dirname + "/views/partials")
 
 const projectName = "eCommerces";
 const capitalized = (string) => string[0].toUpperCase() + string.slice(1).toLowerCase();
