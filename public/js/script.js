@@ -1,7 +1,7 @@
 document.addEventListener(
   "DOMContentLoaded",
   () => {
-    console.log("eCommerces JS imported successfully!");
+    // Three.js code
   },
   false
 );

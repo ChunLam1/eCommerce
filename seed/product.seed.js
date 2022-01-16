@@ -3,21 +3,12 @@ require("../db/index");
 const ProductModel = require("../models/Product.model");
 
 const products = [
-    {
-    name: "BLABLA",
-    description:"FAFAFAFA",
-    price:429    
-    },
-    {
-    name: "GOGOOGG",
-    description:"GRAWWR",
-    price:799    
-    },
-    {
-    name: "FUFUFUFUFU",
-    description:"BLOP",
-    price:612    
-    }
+  {
+    name: "360° AX BLADE",
+    description: "Three Body X 360° | Basketball Shoes",
+    price: 420,
+    modelId: "shoe"
+  },
 ];
 
 (async function insertProduct() {

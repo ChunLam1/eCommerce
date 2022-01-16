@@ -1,36 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url("http://isarta.com/infos/wp-content/uploads/2015/01/Fotolia_70869411_S.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
-}
-
-a {
-  color: #9eb666;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(109, 27, 27);
-}
-
-h1 {
-  color: brown;
-}
-
-.panier {
-  color: cornflowerblue;
-  height: 10px;
-  cursor: pointer;;
-}
-.panier:hover{
-  color: crimson;
-}
-p{
-  color: chocolate;
-}
-label{
-  color: coral;
+  margin: 0;
+  padding: 0;
 }
