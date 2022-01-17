@@ -1,16 +1,44 @@
 <style>
     nav {
         display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 16px;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav div {
+        font-family: "Outfit", sans-serif;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 20px;
+    }
+
+    nav div a {
+        margin: 0 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        transition: border 250ms ease-in-out;
+    }
+
+    nav div a:hover {
+        border-bottom: 1px solid black;
     }
 </style>
 <nav>
-    <h2><i class="fas fa-cannabis"></i></h2>
+    <a href="/"><i class="fas fa-cannabis"></i></a>
 
     <div class="nav-start">
         <a href="/products">Products</a>
-        <a href="/products">Our Story</a>
-        <a href="/dashboard/create">create a product</a>
-        <a href="/dashboard/manage">manage a product</a>
+        <a href="/our-story">Our Story</a>
     </div>
 
     <div class="nav-end">
