@@ -1,19 +1,26 @@
 const router = require("express").Router();
+const Product = require("../models/Product.model");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.get("/new", (req, res, next) => {
-  res.render("newProduct");
+router.get("/products", async (req, res, next) => {
+  try {
+    const products = await Product.find();
+    res.render("products", {
+      products,
+    })
+  } catch (e) {
+    console.error(e);
+  }
+  
 });
 
-router.get("/women", (req, res, next) => {
-  res.render("women");
+router.get("/checkout", (req, res, next) => {
+  res.render("checkout");
 });
 
-router.get("/men", (req, res, next) => {
-  res.render("men");
-});
+
 module.exports = router;

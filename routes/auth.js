@@ -9,7 +9,6 @@ const saltRounds = 10;
 
 // Require the User model in order to interact with the database
 const User = require("../models/User.model");
-const Product = require("../models/Product.model");
 
 router.get("/signup", (req, res) => {
   res.render("auth/signup");
