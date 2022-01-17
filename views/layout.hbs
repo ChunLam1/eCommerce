@@ -7,6 +7,9 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>{{title}}</title>
       <link rel="stylesheet" href="/stylesheets/style.css" />
+      {{#each css}}
+         <link rel="stylesheet" href="/stylesheets/{{this}}.css">
+      {{/each}}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
    </head>
 

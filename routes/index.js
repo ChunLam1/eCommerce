@@ -11,14 +11,13 @@ router.get("/products", async (req, res, next) => {
     const products = await Product.find();
     res.render("products", {
       products,
+      css: ["products"]
     })
   } catch (e) {
     console.error(e);
   }
   
 });
-
-
 
 router.get("/checkout", (req, res, next) => {
   res.render("checkout");

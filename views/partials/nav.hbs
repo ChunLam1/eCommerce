@@ -39,6 +39,10 @@
     <div class="nav-start">
         <a href="/products">Products</a>
         <a href="/our-story">Our Story</a>
+        {{#if isAdmin}}
+        <a href="/dashboard/create">Create a product</a>
+        <a href="/dashboard/manage">Manage a product</a>
+        {{/if}}
     </div>
 
     <div class="nav-end">
