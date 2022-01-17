@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Product = require("../models/Product.model");
+const Checkout = require("../models/Checkout.model");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
@@ -18,11 +19,12 @@ router.get("/products", async (req, res, next) => {
   } 
 });
 
-router.post("/products", (req, res) =>{
-  Product
-  .create(req.body)
-  .then(()=>res.redirect("/checkout"))
-  .catch(err => console.error(err)) 
+router.post("/products", async (req, res, next) =>{
+  try {
+    Checkout.create(req.body);
+  } catch (e) {
+    next(e);
+  }
 })
 
 router.get("/checkout", (req, res, next) => {
