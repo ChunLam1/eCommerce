@@ -13,6 +13,9 @@ const productSchema = new Schema({
   },
   modelId: {
     type: String
+  },
+  quantity:{
+    type:Number
   }
 })
 

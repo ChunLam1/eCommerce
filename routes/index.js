@@ -15,9 +15,15 @@ router.get("/products", async (req, res, next) => {
     })
   } catch (e) {
     console.error(e);
-  }
-  
+  } 
 });
+
+router.post("/products", (req, res) =>{
+  Product
+  .create(req.body)
+  .then(()=>res.redirect("/checkout"))
+  .catch(err => console.error(err)) 
+})
 
 router.get("/checkout", (req, res, next) => {
   res.render("checkout");
