@@ -1,1 +1,86 @@
-<canvas id="landing"></canvas>
+<div class="container">
+    <div class="landing-title">
+        <h2>Dior Attract Pump</h2>
+        <p>Crafted in white supple calfskin, Maria Grazia Chiuri pays homage to the House's archives with the pump's diamond toe. The elegant style is completed by a 10 cm (4) heel.</p>
+        <button>Shop Now</button>
+    </div>
+
+    <canvas id="landing"></canvas>
+
+    <a href="/products" class="collections">
+        <p>SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS An Ultrawide Screen?!</p>
+        <p>25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE 25% OFF SITEWIDE</p>
+        <p>SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS SEE ALL COLLECTIONS</p>
+    </a>
+</div>
+
+<style>
+    .container {
+        background: #edf7ff;
+        font-family: "Outfit", sans-serif;
+    }
+
+    .landing-title {
+        position: absolute;
+        padding: 42px;
+        top: 45%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .landing-title h2 {
+        font-size: 42px;
+        width: 20%;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .landing-title p {
+        font-size: 24px;
+        font-weight: 300;
+        width: 60%;
+    }
+    
+    .landing-title button {
+        font-size: 18px;
+        padding: 24px;
+        font-weight: bold;
+        margin-top: 32px;
+        background: #2d3c42;
+        border: 0;
+        color: #fff;
+    }
+
+    .collections {
+        width: 100%;
+        font-family: "Outfit", sans-serif;
+        text-decoration: none;
+        color: #050200;
+        font-size: 32px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .collections p {
+        white-space: nowrap;
+        margin: 0;
+        padding: 24px;
+    }
+
+    .collections p:nth-child(1) {
+        background: #fbeeb5;
+    }
+
+    .collections p:nth-child(2) {
+        background: #df8976;
+        transform: rotateZ(-3deg);
+        margin-top: -9vh;
+        width: fit-content;
+    }
+
+    .collections p:nth-child(3) {
+        background: #a8e8e9;
+        bottom: 0;
+    }
+</style>
