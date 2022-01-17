@@ -1,0 +1,28 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each products}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{description}}</td>
+                <td>{{price}}</td>
+                <td><a href="/dashboard/manage/{{_id}}"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/dashboard/delete/{{_id}}"><i class="fas fa-trash-alt"></i></a></td>
+            </tr>
+        {{/each}}
+        {{#unless products}}
+        <tr>
+            <td>No products yet !</td>
+        </tr>
+        {{/unless}}
+    </tbody>
+</table>
