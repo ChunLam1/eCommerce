@@ -18,6 +18,8 @@ router.get("/products", async (req, res, next) => {
   
 });
 
+
+
 router.get("/checkout", (req, res, next) => {
   res.render("checkout");
 });
