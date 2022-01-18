@@ -1,16 +1,19 @@
 <table>
     <thead>
         <tr>
-            <td>Product name</td>
+            <td>Pdroduct name</td>
             <td>Quantity</td>
+            <td>Description</td>
             <td>Prix</td>
         </tr>
     </thead>
     <tbody>
     {{#each cart}}
     <tr>
-        <td>{{productId}}</td>
-        <td>{{quantity}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.quantity}}</td>
+        <td>{{this.description}}</td>
+        <td>{{this.price}}</td>
     </tr>
     {{/each}}
     </tbody>
