@@ -2,8 +2,9 @@ const router = require("express").Router();
 const Product = require("../models/Product.model");
 
 router.get("/", (req, res) => {
-  console.log(req.session.cart);
-  res.render("cart");
+  const cart = req.session.cart;
+  console.log(req.session.cart[0].productId);
+  res.render("cart", { cart });
 });
 
 router.patch("/", (req, res) => {

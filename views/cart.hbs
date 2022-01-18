@@ -1,3 +1,17 @@
-{{#each session.cart}}
-<p>{{this.productId}}</p>
-{{/each}}
+<table>
+    <thead>
+        <tr>
+            <td>Product name</td>
+            <td>Quantity</td>
+            <td>Prix</td>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each cart}}
+    <tr>
+        <td>{{productId}}</td>
+        <td>{{quantity}}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
