@@ -12,7 +12,8 @@ router.get("/products", async (req, res, next) => {
     const products = await Product.find();
     res.render("products", {
       products,
-      css: ["products"]
+      css: ["products"],
+      scripts: ["basket"]
     })
   } catch (e) {
     console.error(e);
@@ -20,16 +21,12 @@ router.get("/products", async (req, res, next) => {
 });
 
 router.post("/products", async (req, res, next) =>{
-  try {
-    Checkout.create(req.body);
-  } catch (e) {
-    next(e);
-  }
+  // try {
+    
+  //   Checkout.create(req.body);
+  // } catch (e) {
+  //   next(e);
+  // }
 })
-
-router.get("/checkout", (req, res, next) => {
-  res.render("checkout");
-});
-
 
 module.exports = router;

@@ -1,13 +1,14 @@
 <h1>POUR HOMME</h1>
-<form action="/products" method="post">
+
 
 {{#each products}}
+<form action="/products" method="post">
 <h2>{{name}}</h2>
 <p>{{description}}</p>
 <p>Price : {{price}}€</p>
 
 <label for="quantity">Quantity: </label>
-<input type="number" name="quantity" min="1">
-<button>Add to basket</button>
+<input class="quantity" value="1" type="number" name="quantity" min="1">
+<button data-productid="{{_id}}" class="btnBasket">Add to basket</button>
 {{/each}}
 </form>
