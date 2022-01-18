@@ -1,20 +1,23 @@
 <table>
     <thead>
         <tr>
-            <td>Pdroduct name</td>
+            <td>Product name</td>
             <td>Quantity</td>
             <td>Description</td>
-            <td>Prix</td>
+            <td>Price</td>
+            <td>Total</td>
         </tr>
     </thead>
     <tbody>
     {{#each cart}}
     <tr>
         <td>{{this.name}}</td>
-        <td>{{this.quantity}}</td>
+        <td class="quant">{{this.quantity}}</td>
         <td>{{this.description}}</td>
-        <td>{{this.price}}</td>
+        <td class="price">{{this.price}}</td>
+        <td class="totalPrice"></td>
     </tr>
     {{/each}}
+    <button class="btnPrice">TEST</button>
     </tbody>
 </table>
