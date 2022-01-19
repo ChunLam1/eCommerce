@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
       })
       .catch((error) => console.error(error));
   });
-  res.render("cart", { cart });
+  res.render("cart", { cart, scripts: ["dom"] });
 });
 
 router.get("/empty", (req, res) => {
