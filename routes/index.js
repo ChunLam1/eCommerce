@@ -7,26 +7,29 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
+router.get("/our-story", (req, res) => {
+  res.render("story");
+});
+
 router.get("/products", async (req, res, next) => {
   try {
     const products = await Product.find();
     res.render("products", {
       products,
       css: ["products"],
-      scripts: ["basket"]
-    })
+      scripts: ["basket"],
+    });
   } catch (e) {
     console.error(e);
-  } 
+  }
 });
 
-router.post("/products", async (req, res, next) =>{
+router.post("/products", async (req, res, next) => {
   // try {
-    
   //   Checkout.create(req.body);
   // } catch (e) {
   //   next(e);
   // }
-})
+});
 
 module.exports = router;
