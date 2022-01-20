@@ -5,7 +5,7 @@
         width: 100%;
         /* margin-left: auto; */
         /* margin-right: auto; */
-        margin:0px;
+        margin:-17px;
     }
 
     nav a {
@@ -30,12 +30,13 @@
         transition: border 250ms ease-in-out;
     }
 
-    nav div a:hover {
+   .nav-text:hover {
         border-bottom: 1px solid black;
     }
 
 .LOGO{
     width: 160px;
+    padding:13px;
 }
 .nav-start{
     display: flex;
@@ -46,22 +47,22 @@
     
     <div class="nav-start">
         <a href="/"><img class="LOGO" src="/images/CAT LOGO.png" alt="LOGO-CAT"></i></a>
-        <a href="/products">Products</a>
-        <a href="/our-story">Our Story</a>
+        <a class="nav-text"href="/products">Products</a>
+        <a class="nav-text"  class="nav-text" href="/our-story">Our Story</a>
         {{#if isAdmin}}
-        <a href="/dashboard/create">Create a product</a>
-        <a href="/dashboard/manage">Manage a product</a>
+        <a class="nav-text" href="/dashboard/create">Create a product</a>
+        <a class="nav-text" href="/dashboard/manage">Manage a product</a>
         {{/if}}
     </div>
 
     <div class="nav-end">
         {{#unless isLoggedIn}}
-            <a href="/auth/signup">Register</a>
-            <a href="/auth/login">Log in</a>
+            <a class="nav-text"href="/auth/signup">Register</a>
+            <a class="nav-text"href="/auth/login">Log in</a>
         {{/unless}}
         {{#if isLoggedIn}}
             <a href="/auth/logout">Log out</a>
         {{/if}}
-        <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
+        <a class="nav-text"href="/cart"><i class="fas fa-shopping-cart"></i></a>
     </div>
 </nav>
