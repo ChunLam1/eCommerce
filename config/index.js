@@ -64,5 +64,3 @@ module.exports = (app) => {
 
   app.use(require("../middlewares/exposeLoginStatus"));
 };
-
-

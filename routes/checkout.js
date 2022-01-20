@@ -1,27 +1,22 @@
-const app = require("express").Router();
-const stripe = require('stripe')('sk_test_VePHdqKTYQjKNInc7u56JBrQ')
+const router = require("express").Router();
+const stripe = require("stripe")("sk_test_VePHdqKTYQjKNInc7u56JBrQ");
+const PORT = process.env.PORT || 3000;
+const YOUR_DOMAIN = `http://localhost:${PORT}`;
 
-app.post('/create-checkout-session', async (req, res) => {
+router.post("/create-checkout-session", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        price_data: {
-          currency: 'usd',
-          product_data: {
-            name: 'T-shirt',
-          },
-          unit_amount: 2000,
-        },
+        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+        price: "{{PRICE_ID}}",
         quantity: 1,
       },
     ],
-    mode: 'payment',
-    success_url: 'https://example.com/success',
-    cancel_url: 'https://example.com/cancel',
+    mode: "payment",
+    success_url: `${YOUR_DOMAIN}/success.html`,
+    cancel_url: `${YOUR_DOMAIN}/cancel.html`,
   });
-
   res.redirect(303, session.url);
 });
 
-
-module.exports = app
+module.exports = router;

@@ -19,7 +19,7 @@
     "morgan": "^1.10.0",
     "path": "^0.12.7",
     "serve-favicon": "^2.5.0",
-    "stripe": "^8.197.0"
+    "stripe": "^8.198.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
