@@ -29,7 +29,7 @@ router.patch("/", (req, res) => {
   else
     req.session.cart.push({ ...req.body, quantity: Number(req.body.quantity) });
   // console.log(req.session.cart);
-  res.status(200).end();
+  res.status(200).json(req.session.cart)
 });
 
 module.exports = router;

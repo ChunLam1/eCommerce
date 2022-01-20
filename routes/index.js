@@ -24,12 +24,12 @@ router.get("/products", async (req, res, next) => {
   }
 });
 
-router.post("/products", async (req, res, next) => {
-  // try {
-  //   Checkout.create(req.body);
-  // } catch (e) {
-  //   next(e);
-  // }
-});
+// router.post("/products", async (req, res, next) => {
+//   // try {
+//   //   Checkout.create(req.body);
+//   // } catch (e) {
+//   //   next(e);
+//   // }
+// });
 
 module.exports = router;

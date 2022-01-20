@@ -1,10 +1,11 @@
 <style>
     nav {
         display: flex;
-        justify-content: space-around;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: space-between;
+        width: 100%;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        margin:0px;
     }
 
     nav a {
@@ -32,11 +33,19 @@
     nav div a:hover {
         border-bottom: 1px solid black;
     }
+
+.LOGO{
+    width: 160px;
+}
+.nav-start{
+    display: flex;
+    align-items: center;
+}   
 </style>
 <nav>
-    <a href="/"><i class="fas fa-cannabis"></i></a>
-
+    
     <div class="nav-start">
+        <a href="/"><img class="LOGO" src="/images/CAT LOGO.png" alt="LOGO-CAT"></i></a>
         <a href="/products">Products</a>
         <a href="/our-story">Our Story</a>
         {{#if isAdmin}}
@@ -53,6 +62,6 @@
         {{#if isLoggedIn}}
             <a href="/auth/logout">Log out</a>
         {{/if}}
+        <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
     </div>
-    <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
 </nav>

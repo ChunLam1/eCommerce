@@ -48,6 +48,9 @@ const dashBoardRoutes = require("./routes/dashboard");
 const req = require("express/lib/request");
 app.use("/dashboard", dashBoardRoutes);
 
+const CheckoutRoute = require("./routes/checkout");
+app.use("/checkout", CheckoutRoute);
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 

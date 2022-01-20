@@ -22,12 +22,14 @@
         <td class="subTotal"></td>
     </tr>
     {{/each}}
-    <button class="btnPrice">TEST</button>
     <tr>
         <td>TOTAL : </td>
         <td id="totalPrice"></td>
     </tr>
     </tbody>
 
+    <form action="/create-checkout-session" method="POST">
+        <button type="submit">Checkout</button>
+      </form>
     
 </table>
