@@ -38,18 +38,12 @@ app.use("/", index);
 const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
 
-const profileRoutes = require("./routes/profile");
-app.use("/profile", profileRoutes);
-
 const cartRoutes = require("./routes/cart");
 app.use("/cart", cartRoutes);
 
 const dashBoardRoutes = require("./routes/dashboard");
 const req = require("express/lib/request");
 app.use("/dashboard", dashBoardRoutes);
-
-const CheckoutRoute = require("./routes/checkout");
-app.use("/checkout", CheckoutRoute);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
