@@ -6,7 +6,7 @@ const products = [
   {
     name: "DIOR ATTRACT PUMP",
     description:
-      "A heel extending from the back of the shoe to the front of the shank and having a tread formed by an extension of the sole.",
+      "A heel extending from the back of the shoe to the front of the shank.",
     price: 599,
     modelId: "shoe",
     image: "/images/sandales à talons compensés.jpg",
