@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
 
 router.get("/empty", (req, res) => {
   req.session.cart = [];
-  res.redirect("/products");
+  res.redirect("/cart");
 });
 
 router.patch("/", (req, res) => {
