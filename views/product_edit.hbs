@@ -1,11 +1,19 @@
 <form action="/dashboard/manage/{{oneProduct._id}}" method="post">
+    <div class="LoginSignup">
+        <div class="input1">
 <label for="name">Name : </label>
-<input name="name" type="text" value="{{oneProduct.name}}">
+<input class="formInput" name="name" type="text" value="{{oneProduct.name}}">
+</div>
+<div class="input2">
 <label for="description">Description : </label>
-<input name="description" type="text" value="{{oneProduct.description}}">
+<input class="formInput" name="description" type="text" value="{{oneProduct.description}}">
+</div>
+<div class="input2">
 <label for="price">Price : </label>
-<input name="price" type="text" value="{{oneProduct.price}}">
-
+<input class="formInput" name="price" type="text" value="{{oneProduct.price}}">
+</div>
+<div class="input3"> 
 <button>Edit</button>
-
+</div>
+</div>
 </form>

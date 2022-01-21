@@ -1,18 +1,21 @@
-<h1>POUR HOMME</h1>
 
 <form action="/products" method="post">
+    <div class="flexContainer">
 {{#each products}}
 <div class="productContainer">
-<h2>{{name}}</h2>
-<p>{{description}}</p>
+<h2 class="nameProd">{{name}}</h2>
+<p class="descriptionProd">{{description}}</p>
 <p>Price : {{price}}€</p>
 <img src="{{image}}" alt="{{name}}">
 
+<div class="inputProd">
 <label for="quantity">Quantity: </label>
 <!-- <span class="btnMinus"><i class="fas fa-minus"></i></span> -->
 <input class="quantity" value="1" type="number" name="quantity" min="1">
 <!-- <span class="btnPlus"><i class="fas fa-plus"></i></span> -->
 <button data-productid="{{_id}}" class="btnBasket">Add to basket</button>
 </div>
+</div>
 {{/each}}
+</div>
 </form>

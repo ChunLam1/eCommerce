@@ -9,28 +9,38 @@ body {
 }
 /* Product PAGE */
 
-
-.btnPlus{
+.btnPlus {
   cursor: pointer;
 }
 
 /* LOGIN PAGE */
 
-.Login{
+.LoginSignup {
   border: 2px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  padding: 140px;
-  border-radius: 40px;
-  background-color: rgba(128, 146, 163, 0.822);
-  font-size: 50px;
+  padding: 25px 80px;
+  border-radius: 160px;
+  background-color: rgba(218, 218, 218, 0.822);
+  font-size: 30px;
   flex-direction: column;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  gap: 60px;
+  opacity: 90%;
+  transition: all 1s ease-in;
+  box-shadow: 0 12px 16px 10px rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
-.formInput{
+.LoginSignup label{
+  text-shadow:3px 3px #b1b1b1;
+
+}
+.formInput {
   color: #314750;
   background: transparent;
   overflow: hidden;
@@ -40,4 +50,147 @@ body {
   font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0px;
+  border-radius: 20px;
+}
+.input3 button {
+  border-radius: 20px;
+  font-size: 40px;
+  display: block;
+  width: 100%;
+  background-color: rgb(75, 74, 74);
+  color: rgb(248, 248, 248);
+  opacity: 80%;
+  box-shadow: 0 12px 30px 0px rgba(0, 0, 0, 0.24),
+    0 1px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input3 button:hover {
+  color: rgb(206, 150, 150);
+}
+
+.formInput:hover {
+  color: #314750;
+  background: transparent;
+  overflow: hidden;
+  padding: 8px 13px;
+  outline: none;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  border: 2px solid rgb(185, 145, 145);
+}
+
+/* PRODUCTS PAGE */
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productContainer {
+  border: 2px solid rgb(158, 158, 158);
+  text-align: center;
+  box-shadow: 0 0 10px gray;
+}
+.nameProd {
+  font-family:'outfit';
+  text-shadow:2px 2px #b1b1b1;
+}
+.descriptionProd{
+  font-family:'outfit';  
+font-size: 15px;
+}
+.inputProd{
+  text-align: center;
+}
+.inputProd input{
+  width: 30px;
+}
+.inputProd button{
+  border-radius: 50px;
+  border: 2px solid gray ;
+  opacity: 60%;
+ background-color: #2c2b2b; 
+ color: rgb(248, 248, 248);
+ cursor: pointer;
+}
+.inputProd button:hover{
+border: 2px solid rgb(185, 145, 145);
+color: rgb(185, 145, 145);
+}
+.productContainer p {
+  width: 100%;
+}
+.productContainer img{
+  height: 600px;
+}
+
+/* MANAGE PAGE & CART */
+
+.bigContainer{
+  border: 2px solid black;
+  border-collapse: collapse;
+  min-width: 400px;
+  width: auto;
+  margin: 100px auto;
+  font-family: 'Outfit';
+  box-shadow: 0 12px 30px 0px rgba(0, 0, 0, 0.24),
+  0 1px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.bigContainer thead tr{
+  background-color: rgb(47, 47, 58);
+  color: #eed7d7;
+  text-align: left;
+}
+.bigContainer th, td {
+  padding: 15px 20px;
+}
+.bigContainer tbody tr, td, th {
+  border: 2px solid rgba(138, 0, 0, 0.397);
+}
+.bigContainer tr:nth-child(even){
+background-color: rgba(239, 243, 250, 0.801);
+}
+
+.checkoutBtn{
+  border-radius: 20px;
+  font-size: 40px;
+  display: block;
+  background-color: rgb(221, 224, 252);
+  color: rgb(36, 36, 36);
+  opacity: 80%;
+  box-shadow: 0 12px 30px 0px rgba(0, 0, 0, 0.24),
+    0 1px 50px 0 rgba(0, 0, 0, 0.19);
+    text-shadow:2px 2px #b1b1b1;
+    position: absolute;
+    top: 90%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.checkoutBtn:hover{
+  color: rgb(185, 145, 145);;
+}
+.emptyBtn{
+  border-radius: 20px;
+  font-size: 40px;
+  display: block;
+  background-color: rgb(221, 224, 252);
+  opacity: 80%;
+  box-shadow: 0 12px 30px 0px rgba(0, 0, 0, 0.24),
+    0 1px 50px 0 rgba(0, 0, 0, 0.19);
+    text-shadow:2px 2px #b1b1b1;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.emptyBtn a{
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+}
+.emptyBtn a:hover{
+  color: rgb(185, 145, 145);;
 }

@@ -10,7 +10,7 @@ function calculatePrice() {
     subTotal[i].innerHTML = prices[i].innerHTML * quantities[i].innerHTML;
     total += prices[i].innerHTML * quantities[i].innerHTML;
   }
-  totalPrice.innerHTML = total;
+  totalPrice.innerHTML = total +"€";
 }
 
 window.onload = calculatePrice;

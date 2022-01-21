@@ -1,15 +1,15 @@
-<button>
+<button class="emptyBtn">
 <a href="/cart/empty">empty cart</a>
 </button>
 
-<table>
+<table class="bigContainer">
     <thead>
         <tr>
             <td>Product name</td>
             <td>Quantity</td>
             <td>Description</td>
-            <td>Price</td>
-            <td>Total</td>
+            <td>Price/€</td>
+            <td>Total/€</td>
         </tr>
     </thead>
     <tbody>
@@ -29,7 +29,7 @@
     </tbody>
 
     <form action="/create-checkout-session" method="POST">
-        <button type="submit" id="checkout-button">Checkout</button>
+        <button class="checkoutBtn" type="submit" id="checkout-button">Checkout</button>
     </form>
     
 </table>
