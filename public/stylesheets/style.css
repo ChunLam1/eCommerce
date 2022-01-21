@@ -229,3 +229,23 @@ background-color: rgba(239, 243, 250, 0.801);
 .paragraph{
   text-align: center;
 }
+.gif{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.imgProg{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.h1check1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(68, 78, 78);
+  
+}
