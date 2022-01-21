@@ -1,18 +1,27 @@
 const express = require("express");
-const async = require("hbs/lib/async");
-const router = new express.Router();
+const router = express.Router();
+const upload = require("../config/cloudinary");
 const ProductModel = require("../models/Product.model");
-const { findByIdAndDelete } = require("../models/User.model");
 const UserModel = require("../models/User.model");
 
 router.get("/create", (req, res) => {
   res.render("product_add");
 });
 
-router.post("/create", (req, res) => {
-  ProductModel.create(req.body)
+router.post("/create", upload.single("image"), (req, res, next) => {
+  const { name, description, price, image } = req.body;
+  const newProduct = {
+    name,
+    description,
+    price,
+    image,
+  };
+
+  if (req.file) newProduct.image = req.file.path;
+
+  ProductModel.create(newProduct)
     .then(() => res.redirect("/products"))
-    .catch((err) => console.error(err));
+    .catch(next);
 });
 
 router.get("/manage", async (req, res, next) => {

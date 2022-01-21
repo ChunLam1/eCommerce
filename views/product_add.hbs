@@ -1,4 +1,4 @@
-<form action="/dashboard/create" method="post">
+<form action="/dashboard/create" method="post" enctype="multipart/form-data">
     <div class="LoginSignup">
         <div class="input1">
 <label for="name">Name : </label><input class="formInput" name="name" type="text">
@@ -9,7 +9,9 @@
 <div class="input2">
 <label for="price">Price : </label><input class="formInput" name="price" type="text">
 </div>
-<div class="input3"> 
+ <label for="img">Image : </label>
+ <input id="img" name="image" type="file">
+ <div class="input3"> 
 <button>Create</button>
 </div>  
 </div>   

@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
       })
       .catch((error) => console.error(error));
   });
-  res.render("cart", { cart, scripts: ["dom"] });
+  res.render("cart", { cart, scripts: ["dom", "cartItemCounter"] });
 });
 
 router.get("/empty", (req, res) => {

@@ -13,12 +13,3 @@ const quantity = document.querySelectorAll("quantity");
     return;
   };
 });
-
-//PRODUCT MINUS PLUS BTN
-
-// [...btnPlus].forEach((button) => {
-//   button.onclick = (e) => {
-//     console.log(e.target.previousElementSibling);
-//     quantity.value += 1;
-//   };
-// });
